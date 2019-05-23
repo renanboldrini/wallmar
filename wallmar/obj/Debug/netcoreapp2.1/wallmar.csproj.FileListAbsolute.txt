@@ -30,4 +30,8 @@ C:\Users\631620025\source\repos\wallmar\wallmar\obj\Debug\netcoreapp2.1\wallmar.
 C:\Users\631620025\source\repos\wallmar\wallmar\obj\Debug\netcoreapp2.1\wallmar.dll
 C:\Users\631620025\source\repos\wallmar\wallmar\obj\Debug\netcoreapp2.1\wallmar.pdb
 C:\Users\631620025\source\repos\wallmar\wallmar\obj\Debug\netcoreapp2.1\wallmar.csproj.CopyComplete
+C:\Users\631620025\source\repos\wallmar\wallmar\obj\Debug\netcoreapp2.1\Razor\Views\Departaments\Create.g.cshtml.cs
+C:\Users\631620025\source\repos\wallmar\wallmar\obj\Debug\netcoreapp2.1\Razor\Views\Departaments\Delete.g.cshtml.cs
+C:\Users\631620025\source\repos\wallmar\wallmar\obj\Debug\netcoreapp2.1\Razor\Views\Departaments\Details.g.cshtml.cs
+C:\Users\631620025\source\repos\wallmar\wallmar\obj\Debug\netcoreapp2.1\Razor\Views\Departaments\Edit.g.cshtml.cs
 C:\Users\631620025\source\repos\wallmar\wallmar\obj\Debug\netcoreapp2.1\Razor\Views\Departaments\Index.g.cshtml.cs
