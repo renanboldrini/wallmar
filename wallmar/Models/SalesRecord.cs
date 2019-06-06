@@ -7,6 +7,11 @@ namespace wallmar.Models
 {
     public class SalesRecord
     {
+        private DateTime dateTime;
+        private double v;
+        private SaleStatus bILLED;
+        private Seller s1;
+
         public int Id { get; set; }
         public DateTime Date { get; set; }
         public double Amount { get; set; }
@@ -22,6 +27,14 @@ namespace wallmar.Models
             Amount = amount;
             Status = status;
             Seller = seller;
+        }
+
+        public SalesRecord(DateTime dateTime, double v, SaleStatus bILLED, Seller s1)
+        {
+            this.dateTime = dateTime;
+            this.v = v;
+            this.bILLED = bILLED;
+            this.s1 = s1;
         }
     }
 }

@@ -14,5 +14,7 @@ namespace wallmar.Models
         }
 
         public DbSet<wallmar.Models.Departament> Departament { get; set; }
+        public DbSet<wallmar.Models.Seller> Seller { get; set; }
+        public DbSet<wallmar.Models.SalesRecord> SalesRecord  { get; set; }
     }
 }

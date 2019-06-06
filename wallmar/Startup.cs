@@ -11,6 +11,8 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.EntityFrameworkCore;
 using wallmar.Models;
+using wallmar.Data;
+using wallmar.Services;
 
 namespace wallmar
 {
@@ -38,14 +40,24 @@ namespace wallmar
 
             services.AddDbContext<wallmarContext>(options =>
                     options.UseSqlServer(Configuration.GetConnectionString("wallmarContext")));
+            //adiciona a lista de serviços, assim podemos injetar meu serviço em outros
+            services.AddScoped<SeedingService>();
+
+            services.AddScoped<SellerService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IHostingEnvironment env)
+        //O método configure() permite que eu passe argumentos adicionais
+        //Vamos passar como argumento o SeedingService
+        public void Configure(IApplicationBuilder app, IHostingEnvironment env, SeedingService seedingService)
         {
+            //testa se o ambiente é de desenvolvimento
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
+                //Aqui é chamado o método para popular o banco de dados
+                seedingService.Seed();
+                
             }
             else
             {
